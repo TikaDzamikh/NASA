@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		DF3489D229CA416900FB1D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3489D129CA416900FB1D87 /* AppDelegate.swift */; };
-		DF3489D429CA416900FB1D87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3489D329CA416900FB1D87 /* SceneDelegate.swift */; };
 		DF3489D629CA416900FB1D87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3489D529CA416900FB1D87 /* ViewController.swift */; };
 		DF3489D929CA416900FB1D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3489D729CA416900FB1D87 /* Main.storyboard */; };
 		DF3489DB29CA416A00FB1D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3489DA29CA416A00FB1D87 /* Assets.xcassets */; };
 		DF3489DE29CA416A00FB1D87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3489DC29CA416A00FB1D87 /* LaunchScreen.storyboard */; };
+		DF3489E629CA41AF00FB1D87 /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3489E529CA41AF00FB1D87 /* APOD.swift */; };
+		DF3489EE29CA4A7E00FB1D87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3489ED29CA4A7E00FB1D87 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF3489CE29CA416900FB1D87 /* NASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3489D129CA416900FB1D87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF3489D329CA416900FB1D87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DF3489D529CA416900FB1D87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF3489D829CA416900FB1D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF3489DA29CA416A00FB1D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF3489DD29CA416A00FB1D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF3489DF29CA416A00FB1D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF3489E529CA41AF00FB1D87 /* APOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APOD.swift; sourceTree = "<group>"; };
+		DF3489ED29CA4A7E00FB1D87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		DF3489D029CA416900FB1D87 /* NASA */ = {
 			isa = PBXGroup;
 			children = (
-				DF3489D129CA416900FB1D87 /* AppDelegate.swift */,
-				DF3489D329CA416900FB1D87 /* SceneDelegate.swift */,
-				DF3489D529CA416900FB1D87 /* ViewController.swift */,
-				DF3489D729CA416900FB1D87 /* Main.storyboard */,
-				DF3489DA29CA416A00FB1D87 /* Assets.xcassets */,
-				DF3489DC29CA416A00FB1D87 /* LaunchScreen.storyboard */,
-				DF3489DF29CA416A00FB1D87 /* Info.plist */,
+				DF3489E929CA466B00FB1D87 /* ViewControllers */,
+				DF3489E829CA465200FB1D87 /* Models */,
+				DF3489EA29CA469300FB1D87 /* Storyboards */,
+				DF3489EC29CA471B00FB1D87 /* App */,
+				DF3489EB29CA46C000FB1D87 /* Resources */,
 			);
 			path = NASA;
+			sourceTree = "<group>";
+		};
+		DF3489E829CA465200FB1D87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF3489E529CA41AF00FB1D87 /* APOD.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF3489E929CA466B00FB1D87 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF3489D529CA416900FB1D87 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DF3489EA29CA469300FB1D87 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DF3489D729CA416900FB1D87 /* Main.storyboard */,
+				DF3489DC29CA416A00FB1D87 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DF3489EB29CA46C000FB1D87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF3489DA29CA416A00FB1D87 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF3489EC29CA471B00FB1D87 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DF3489D129CA416900FB1D87 /* AppDelegate.swift */,
+				DF3489ED29CA4A7E00FB1D87 /* SceneDelegate.swift */,
+				DF3489DF29CA416A00FB1D87 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3489D629CA416900FB1D87 /* ViewController.swift in Sources */,
+				DF3489E629CA41AF00FB1D87 /* APOD.swift in Sources */,
 				DF3489D229CA416900FB1D87 /* AppDelegate.swift in Sources */,
-				DF3489D429CA416900FB1D87 /* SceneDelegate.swift in Sources */,
+				DF3489EE29CA4A7E00FB1D87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3MXWLU879R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NASA/Info.plist;
+				INFOPLIST_FILE = NASA/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +346,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = TikaDzamikh.NASA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +364,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3MXWLU879R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NASA/Info.plist;
+				INFOPLIST_FILE = NASA/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +377,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = TikaDzamikh.NASA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
